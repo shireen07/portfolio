@@ -1,0 +1,64 @@
+body {
+    //background-color: $color-gray-background;
+    overflow: auto; //ensure no scrollbar 
+}
+
+.active {
+    display: block;
+    visibility: visible;
+}
+
+.header {
+    height: 95vh;
+    position: relative; //z-index:1;
+    background-color: rgba($color-primary, .8);
+    padding: 10rem 0; //background-color:rgba($color-primary-dark,.5);
+}
+
+[class^=section-] {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; //background-color: $color-gray-default;
+    padding: 12rem 0;
+    /*
+    @include respond(phone-large) {
+        padding: 10rem 0;
+    }
+    @include respond(phone) {
+        padding: 5rem 0;
+    }*/
+}
+
+.section-services {
+    min-height: 600px;
+background-color:white;
+}
+
+.section-about {
+    min-height: 1000px;
+    margin: 3rem auto;
+ @include respond(phone)
+ {
+     min-height:1000px;
+ margin-bottom:12.5rem;
+ }
+}
+
+.section-work {
+    margin-top: -25rem;
+    padding: 3rem 0;
+    min-height: 900px;
+}
+
+.section-contact {
+    min-height: 600px;
+    padding: 7rem 0;
+    text-align: center;
+}
+.footer
+{
+    height:300px;
+    position:relative;
+    background-color:$color-background-black;
+}

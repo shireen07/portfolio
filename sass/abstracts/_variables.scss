@@ -1,0 +1,33 @@
+//COLORS
+$color-primary:#3CBBB1;
+$color-secondary:#EE4266;
+$color-tertiary:#FF7700;
+$color-purple:#2A1E5C;
+$color-background-gray:#f1f0ee;
+$color-background-black:#1b242f;
+$color-background-blue:#004777;
+//black and whtie colors
+$color-black:#000;
+$color-white:#fff;
+//BOX-SHADOW
+$box-shadow-primary:.1rem 2rem 4rem rgba($color-black, .4);
+$box-shadow-secondary:.05rem 1.5rem 2.5rem rgba($color-black,.4);
+//font
+$fontfamily-primary:'Raleway',
+sans-serif;
+$fontSize-default:1.6rem;
+//border
+$border-test:2.5px solid $color-tertiary;
+$border-secondary:.3rem solid $color-secondary;
+//grid
+$grid-width:114rem;
+$grid-width-med:88rem;
+$grid-width-small:80rem;
+$grid-width-phone:60rem;
+$gutter-vertical:8rem;
+$gutter-vertical-small:6rem;
+$gutter-horizontal:6rem;
+
+//$gutter-horizontal:6rem; //60px horizontal, LARGE
+$gutter-horizontal:4rem; //40 px horizontal - SMALL
+$gutter-horizontal-small:2rem;

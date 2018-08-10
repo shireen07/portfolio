@@ -1,0 +1,106 @@
+.btn {
+    text-decoration: none;
+    &--main {
+        border: 3px solid $color-background-gray;
+        padding: .8rem 1rem;
+        font-size: 3.2rem;
+        text-align: center;
+        color: $color-background-gray;
+        font-weight: 500;
+        transition: all .3s ease;
+        align-self: center;
+        width: 40%;
+        display: inline-block;
+        @include respond(phone-landscape) {
+            font-size: 2.7rem;
+            margin-bottom: 2rem;
+        }
+        @include respond(phone) {
+            font-size: 2.4rem;
+            width: 60%;
+        }
+        &:hover {
+            padding: .8rem 1.5rem;
+            background-color: $color-background-black; //          border-radius: 2.5rem;
+            font-size: 3rem;
+            border-color: $color-black;
+            font-weight: 700;
+            .fa-angle-double-down {
+                transform: rotate(0deg);
+            }
+        }
+    }
+    &--download {
+        font-size: 2.1rem;
+        color: $color-background-gray;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding: .6rem 1rem;
+        border-radius: 8px;
+        border: 3px solid $color-primary;
+        display: block;
+        align-self: center;
+        transition: all .4s ease;
+        font-weight: 700;
+        @include respond(tab-port) {
+            width: 60%;
+        } //for toggle menu
+        @include respond(phone-large) {
+            border-radius: 0;
+            width: 80%;
+            margin: 2rem auto;
+        } //RESUME BUTTON IN ABOUT SECTION
+        &--2 {
+            color: black;
+            border-radius: 0;
+            @include respond(tab-port) {
+                width: 40%;
+                padding: 2rem 2.5rem;
+            }
+            @include respond(phone) {
+                width: 80%;
+            }
+        }
+        & .fa-download {
+            padding-right: 1rem;
+        }
+        &:hover {
+            background-color: rgba($color-primary, .6);
+            color: $color-background-black;
+        }
+    } //CONTACT BUTTON
+    &--contact {
+        display: block;
+        flex: 1 0 20%;
+        max-width: 40%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        outline: 0;
+        border: 3px solid $color-primary;
+        transition: all .3s ease;
+        &:hover {
+            outline: 0;
+            border: 3px solid $color-tertiary;
+        }
+        @include respond(phone) {
+            max-width: 70%;    display: block;
+            flex: 1 0 20%;
+            max-width: 40%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            font-size: 1.8rem;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            outline: 0;
+            border: 3px solid $color-primary;
+            transition: all .3s ease;
+        }
+    }
+}

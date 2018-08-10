@@ -1,0 +1,176 @@
+.work {
+    max-width: $grid-width;
+    margin: 2rem auto;
+    padding: 2rem;
+    min-height: 800px;
+    overflow: hidden;
+    &__text {
+        min-height: 10rem;
+        margin: 5rem auto;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__item {
+        border: .3rem solid transparent;
+        margin: .5rem auto;
+        padding: 1rem;
+        flex: 1 0 20%;
+        min-width: 20%;
+        max-width: 20%;
+        text-align: center; //TEXT ITEMS
+        list-style: none;
+        text-decoration: none;
+        letter-spacing: .2rem;
+        font-size: 2rem;
+        transition: .3s ease-out;
+        border: 3px solid $color-purple;
+        opacity: 0;
+        -webkit-animation-duration: .8s ease;
+        @include respond(tab-port) {
+            flex: 1 0 25%;
+            max-width: 25%;
+            padding: 1.5rem auto;
+            margin: 1.5rem 0;
+        }
+        @include respond(phone) {
+            flex: 1 0 47.5%;
+            max-width: 47.5%;
+            padding: 2.5rem auto;
+        }
+        @include respond(phone-landscape) {
+            flex: 1 0 47.5%;
+            max-width: 47.5%;
+            padding: 2.5rem auto;
+        }
+        &:hover {
+            background-color: rgba($color-primary, .4);
+            border-color: $color-primary;
+        } //ACTIVE
+        &--active {
+            border-color: $color-primary;
+            background-color: rgba($color-primary, .4);
+        }
+        &>* {
+            //STYLE LINK TANG
+            color: $color-black;
+            text-decoration: none;
+        }
+        &--2 {
+            //PROJECT ITEMS
+            flex: 1 0 32%;
+            min-width: 32%;
+            max-width: 32%;
+            margin: 1rem 0;
+            position: relative;
+            height: 425px;
+            box-shadow: $box-shadow-primary;
+            opacity: 0;
+            -webkit-animation-duration: .8s ease;
+            @include respond(tab-port) {
+                max-width: 47.5%;
+                flex: 1 0 47.5%;
+                margin: 2.5rem 1rem;
+            }
+            @include respond(phone) {
+                max-width: 95%;
+                flex: 1 0 95%;
+            }
+            @include respond(phone-landscape) {
+                max-width: 47.5%;
+                flex: 1 0 47.5%;
+                margin: 2.5rem 1rem;
+            }
+        }
+    } //////
+    //PROJECTS
+    &__projects-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 500px;
+        flex-wrap: wrap;
+        @include respond(phone) {}
+    } /////////////PROJECTS - IMAGE
+    &__img-container {
+        height: 250px;
+        display: inline-block; //Hover image, show details
+    }
+    &__img-overlay {
+        display: inline-block;
+        @include absCenter;
+        z-index: 2;
+        background-color: $color-white;
+        width: 100%;
+        transition: .4s ease;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; //control opacity for checking    display: none;
+        visibility: hidden;
+        height: 100px;
+        opacity: 0;
+     
+        &.hidden {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+        }
+        &.active {
+        
+            display: flex;
+            visibility: visible;
+            opacity: 1;
+            height: 425px;
+        }
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+    }
+    &__overlay-accomplishments {
+        margin-bottom: .1rem;
+        padding-left: 3rem;
+    }
+    &-fa-close {
+        font-size: 240%;
+        position: absolute;
+        top: -1%;
+        left: 83%;
+        cursor: pointer;
+        padding: 1.2rem;
+    }
+    &__overlay-links {
+        padding-left: 1rem;
+        text-align: left;
+        padding: 3rem;
+        background-color: $color-background-gray;
+        border-top: 1px solid $color-purple;
+    } ///////////
+    //TOGGLE
+    &__toggle {
+        height: 155px;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+    }
+    .fa-ellipsis-v {
+        font-size: 200%;
+        position: absolute;
+        padding: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        top: 0%;
+        left: 88%;
+        cursor: pointer;
+        z-index: 2;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}

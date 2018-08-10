@@ -1,0 +1,232 @@
+html {
+    font-size: 62.5%; //reset REMS, to 10px = 1rem;
+    font-family: $fontfamily-primary; //Font size depending on screen size
+    //Lowest REM possible is 8px
+    @include respond(tab-land) {
+        font-size: 56.25%; //9px = 1rem
+    }
+    @include respond(phone) {
+        font-size: 56.25%; //8.6 px = 1rem
+    }
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(desktop-large) {
+        font-size: 76.25%;
+    }
+}
+
+body {
+    font-size: $fontSize-default;
+}
+
+.heading {
+    &--primary {
+        text-align: center;
+        font-size: 6rem;
+        color: white;
+        &-sub {
+            font-size: 5.5rem;
+        }
+        @include respond(tab-port)
+        {
+            font-size:4.8rem;
+            
+        &-sub
+        {
+            font-size:4.3rem;
+        }
+        }
+        @include respond(phone)
+        {
+            font-size:3.5rem;
+            &-sub
+            {
+
+            }
+        }
+    }
+    &--sub {
+        font-size: 3.5rem;
+        text-align: center;
+        letter-spacing: .3rem;
+    }
+    &--about {
+        font-size: 2.8rem;
+        letter-spacing: .3rem;
+        font-weight: 400;
+        @include respond(tab-port) {
+            font-size: 3rem;
+       font-weight:500;
+        }
+        &-sub {
+            font-weight: 200;
+            font-size: 2.2rem;
+            letter-spacing: .2rem;
+            @include respond(tab-port) {
+                font-size: 2.2rem;
+            }
+        }
+    }
+    &--skills {
+        font-size: 2.7rem;
+        font-weight: 600;
+        margin: .5rem auto;
+        padding-bottom: .8rem;
+        color: $color-background-black;
+        letter-spacing: .2rem;
+    }
+    &--work {
+        text-align: left;
+        padding-left: 3rem;
+        padding-top: 10px;
+        font-size: 2.2rem;
+        letter-spacing: .1rem;
+        &--2 {}
+        @include respond(tab-port)
+        {
+            font-size:2rem;
+            padding:2.5rem 2rem;
+        }
+    }
+}
+
+//////////
+//about
+.about {
+    &__description {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        text-align: left;
+        line-height: 135%;
+        padding-top: 2rem;
+      
+        @include respond(tab-port) {
+            width: 82.5%;
+            line-height: 150%;
+            padding:2rem 0;
+        }
+    }
+    &__skill {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: .7rem 1.2rem;
+        letter-spacing: .2rem;
+        border: 2px solid $color-purple;
+        &-text {
+            text-align: center;
+            margin: .9rem auto;
+            font-size: 1.8rem;
+            align-self: center;
+            text-transform: capitalize;
+            display: block;
+            padding: .7rem 1.2rem;
+            font-weight: 400;
+            letter-spacing: .1rem;
+        }
+        &__profile-text {}
+    }
+}
+
+//////////////
+//CARD
+.card {
+    &__dot {
+        margin-right: 1.5rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+        &--1 {
+            background-color: $color-secondary;
+        }
+        &--2 {
+            background-color: $color-purple
+        }
+        &--3 {
+            background-color: $color-tertiary;
+        }
+        &--4 {
+            background-color: $color-primary;
+        }
+    }
+    &__title {
+        display: inline-block;
+        font-weight: 500;
+        &--1 {
+            color: $color-secondary;
+        }
+        &--2 {
+            color: $color-purple;
+        }
+        &--3 {
+            color: $color-tertiary;
+        }
+        &--4 {
+            color: $color-primary;
+        }
+    }
+    &__description {
+        padding: .3rem;
+        font-size: 1.4rem;
+        line-height: 140%;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+
+//////////////
+//WORK
+.work {
+    &__list-text {
+        font-size: 1.8rem;
+        color: black;
+        font-weight: 300;
+        line-height: 130%;
+        padding: .3rem 0;
+    }
+    &__link {
+        font-size: 4rem;
+    }
+    &__description {
+        text-align: left;
+        color: black;
+        font-size: 1.6rem;
+        line-height: 130%;
+        letter-spacing: .1rem;
+        font-weight: 300;
+        display: block;
+        padding: 1rem 2rem;
+        margin-top: 0;
+    }
+    &__coming-soon {
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 1.5rem 0;;
+    }
+}
+
+.work .fa-external-link,
+.work .fa-github,.work .fa-code {
+    font-size: 4rem;
+    border: 2px solid $color-purple;
+    padding: .8rem 1rem;
+    background-color: rgba($color-background-gray, .9);
+    border-radius: 50%;
+}
+
+//FONT AWESOME
+.fa-code {
+    color: $color-black;
+}
+
+.fa-angle-double-down {
+    transition: .3s ease;
+    color: $color-background-gray;
+    transform: rotate(-90deg);
+}

@@ -1,0 +1,679 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0 " />
+    <META HTTP-EQUIV='Content-Security-Policy' CONTENT="default-src 'self' ; script-src 'self' 'unsafe-inline' 
+    *.disqus.com a.disquscdn.com requirejs.org www.google-analytics.com; 
+     media-src 'self' ; frame-src disqus.com; style-src 'self' 
+    'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:">
+    <!-- Content-Security-Policy: allow 'self'; img-src data: <<INSERT DOMAIN NAME>> -->
+    
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="public/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="public/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="public/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="public/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="public/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="public/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="public/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="public/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="public/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/icon/favicon-16x16.png"> -->
+
+    <link rel="manifest" href="public/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="public/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- import icons -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="public/libs/css/animate.css">
+
+    <link rel="stylesheet" href="public/libs/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+
+
+    <title>Shereen Phadte | Portfolior</title>
+</head>
+
+<!--loader-->
+
+<body>
+    <header class="header" id="home">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="public/img/video/video-2.mp4" type="video/mp4"> Your browser is not supported!
+                <!-- if cannot be displayed -->
+
+            </video>
+        </div>
+        <!-- end bg-video -->
+        <!--
+    <div class="header__logo-box">
+       
+        <a href="#">
+            <i class="fa fa-code"></i>
+        </a>
+    </div>-->
+        <div class="header__container">
+            <h1 class="heading--primary">Hello, I'm
+                <span class="u-bold-color">Shereen Phadte</span>
+            </h1>
+            <h1 class="heading--primary"> a FullStack Web Developer
+            </h1>
+            <a href="#services" class="btn btn--main ">View work
+                <i class="fa fa-angle-double-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav__toggle-container">
+            <a class="nav__toggle">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="nav__navigation-container">
+
+            <li class="nav__item">
+                <a href="#home" class="nav__click">Home</a>
+            </li>
+            <li class="nav__item">
+                <a href="#services" class="nav__click">Services</a>
+            </li>
+            <li class="nav__item">
+                <a href="#about" class="nav__click">About Me</a>
+            </li>
+            <li class="nav__item">
+                <a href="#work" class="nav__click">Projects</a>
+            </li>
+            <li class="nav__item">
+                <a href="#contact" class="nav__click">Contact</a>
+            </li>
+        </div>
+        <div class="nav__download-container">
+            <li class="nav__item--2">
+
+                <!-- download resume -->
+                <a href="public/img/Shereen Phadte - Resume.pdf" class="btn btn--download" download>
+                    <i class="fa fa-download"></i>Resume</a>
+            </li>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="loader"></div>
+        <section class="section-services" id="services">
+            <h2 class="heading--sub u-margin-bottom-large">
+                <span class="u-color-underline ">Services</span>
+            </h2>
+            <br>
+            <br>
+            <br>
+
+            <div class="card__container">
+
+                <div class="card__item">
+                    <div class="card">
+                        <figure class="card__shape">
+                            <div class="card__img card__img--1"></div>
+
+                            <figcaption class="card__text-container">
+                                <div class="card__text-container--header">
+                                    <div class="card__dot card__dot--1"></div>
+                                    <h3 class="card__title card__title--1">Web Development</h3>
+                                </div>
+                                <p class="card__description">Building beautiful websites (static or dynamic) from the ground up, using multiple
+                                    languages and frameworks in combination including HTML5, CSS3, Javascript, with formatted
+                                    and commented code following BEM-notation.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end card-->
+                </div>
+                <!-- end col-->
+                <div class="card__item">
+                    <div class="card">
+                        <figure class="card__shape">
+                            <div class="card__img card__img--2"></div>
+
+                            <figcaption class="card__text-container">
+                                <div class="card__text-container--header">
+                                    <div class="card__dot card__dot--2"></div>
+                                    <h3 class="card__title card__title--2">Web Design</h3>
+                                </div>
+                                <p class="card__description">Building a quality website requires a good design, using Photoshop, wireframes and client
+                                    input, I like to mockup web designs in Photoshop which provides ease in gathering assets as the
+                                    developer as well as keeping the client involved in the design process. </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end card-->
+                </div>
+                <!-- end col-->
+                <div class="card__item">
+                    <div class="card">
+                        <figure class="card__shape">
+                            <div class="card__img card__img--3"></div>
+
+                            <figcaption class="card__text-container">
+                                <div class="card__text-container--header">
+                                    <div class="card__dot card__dot--3"></div>
+                                    <h3 class="card__title card__title--3">UX/UI</h3>
+                                </div>
+                                <p class="card__description">To build a great website from the ground up, the first step is to begin with
+                                     ideas, storyboards, and focusing on creating a simple user-friendly design that is wireframed with pencil and paper.
+                                    A quality website is defined by its user experience.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end card-->
+                </div>
+                <!-- end col-->
+                <div class="card__item">
+                    <div class="card">
+                        <figure class="card__shape">
+                            <div class="card__img card__img--4"></div>
+
+                            <figcaption class="card__text-container">
+                                <div class="card__text-container--header">
+                                    <div class="card__dot card__dot--4"></div>
+                                    <h3 class="card__title card__title--4">Responsive</h3>
+                                </div>
+                                <p class="card__description">Using media queries, Chrome Devtools and responsive frameworks, 
+                                    I make websites responsive to allow the users to have a consistent experience across multiple devices</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end card-->
+                </div>
+                <!-- end col-->
+        </section>
+        <!-- end section-services -->
+        <section class="section-about" id="about">
+            <h2 class="heading--sub">
+                <span class="u-color-underline">About</span>
+            </h2>
+            <br>
+            <br>
+
+            <div class="about">
+                <div class="row">
+
+                    <div class="col-1-of-2 about__column--1">
+                        <div class="about__profile-container u-margin-bottom-small">
+                            <img src="public/img/profile.jpg" class="about__img">
+                            <div class="about__profile-text">
+
+                                <h2 class="heading--about">Shereen Phadte</h2>
+                                <div class="about__group">
+                                    <div class="card__dot card__dot--4"></div>
+                                    <h3 class="heading--about-sub u-color-primary">Web Developer</h3>
+                                </div>
+                                <div class="about__group">
+                                    <div class="card__dot card__dot--1"></div>
+                                    <h3 class="heading--about-sub u-color-secondary">Graduate Student</h3>
+                                </div>
+                            </div>
+                            <!-- end profile-text-->
+                        </div>
+                        <br>
+                        <div class="about__profile-container-sub">
+                            <h2 class="heading--about u-text-align-center  u-margin-bottom-med">
+
+                                <span class="u-color-underline--2">Who is this?</span>
+                            </h2>
+                            <p class="about__description">
+                                A minimalist who believes in structuring websites that are ultimately geared towards providing the user 
+                                with an excellent experience, by creating clean user-interfaces that align with the client's 
+                                business goals. I have completed my Masters degree in Computer Information Systems from Univeristy of Central 
+                                Missouri in May 2018. I’ve always sought out opportunities and challenges that are meaningful to me. 
+                                Although my professional path has taken many twists and turns — from a dotnet developer to a Presales executive, 
+                                and now web development - I've never stopped engaging my passion to help others and solve problems.
+                                As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things beautiful, 
+                                and my mission-driven work ethic to literally change the world.
+                            </p>
+                            <br>
+                            <br>
+                            <!-- <br> -->
+                            <!-- download resume-->
+                            <a href="public/img/Shereen Phadte - Resume.pdf" download class="btn btn--download btn--download--2 u-text-align-center">
+                                <i class="fa fa-download"></i>Resume</a>
+                        </div>
+                        <!-- end subcontainer-->
+                        <!-- end profile-container -->
+                    </div>
+                    <div class="col-1-of-2 about__column--2">
+                        <!-- <br>
+                        <br> -->
+                        <div class="about__skills-container">
+                            <li class="about__skills-item">
+                                <h2 class="heading--skills">Markup/Style</h2>
+
+                                <hr class="u-break">
+                                <div class="about__skills-group">
+
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/HTML5.png">
+                                        <figcaption class="about__skills-text">Html5 </figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/CSS3.png">
+                                        <figcaption class="about__skills-text">Css3</figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/SASS.png">
+                                        <figcaption class="about__skills-text">Sass</figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/bootstrap.png">
+                                        <figcaption class="about__skills-text">Bootstrap</figcaption>
+                                    </figure>
+
+                                </div>
+                            </li>
+                            <!-- end skills-item-->
+                            <li class="about__skills-item">
+                                <h2 class="heading--skills">Javascript</h2>
+
+                                <hr class="u-break">
+                                <div class="about__skills-group  about__skills-group--2">
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/JavaScript-logo.png">
+                                        <figcaption class="about__skills-text">JavaScript </figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/jquery.png">
+                                        <figcaption class="about__skills-text">jQuery</figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/react.png">
+                                        <figcaption class="about__skills-text">React JS</figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/redux.png">
+                                        <figcaption class="about__skills-text">Redux</figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+                            <!-- end skills-item-->
+                            <li class="about__skills-item">
+                                <h2 class="heading--skills">Back-end</h2>
+                                <hr class="u-break">
+                                <div class="about__skills-group about__skills-group--2">
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/nodejs.png">
+                                        <figcaption class="about__skills-text">NodeJS</figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/expressjslogo.png">
+                                        <figcaption class="about__skills-text">Express JS</figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/postgres.png">
+                                        <figcaption class="about__skills-text">Postgres</figcaption>
+                                    </figure>
+                                    <figure class="about__skills-img">
+                                        <img class="about__resp-img" src="public/img/logo/phpMysql.png">
+                                        <figcaption class="about__skills-text">PHP & MySQL</figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+                            <!-- end skills-item-->
+                        </div>
+                        <!-- end col-1-of-2-->
+                    </div>
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end about-->
+            </div>
+            <br>
+
+            <div class="about about--2">
+                <div class="row">
+                    <div class="about__skills-container">
+
+                        <li class="about__skills-item about__skills-item--2">
+                            <h2 class="heading--skills">Other Skills and Tools</h2>
+
+                            <hr class="u-break">
+                            <div class="about__skills-group about__skills-group--3">
+                                <p class="about__skill">Github</p>
+                                <p class="about__skill">Heroku</p>
+                                <p class="about__skill">NPM</p>
+                                <p class="about__skill">Wordpress</p>
+                                <p class="about__skill">Python</p>
+                                <p class="about__skill">Photoshop</p>
+                                <p class="about__skill">MongoDB</p>
+                                <p class="about__skill">POSTMAN</p>
+                                <p class="about__skill">PSD2HTML</p> 
+                                <p class="about__skill">Microsoft Office</p>
+                                <p class="about__skill">DevExpress Web UI Controls</p>
+                                <p class="about__skill">RESTful API</p>
+                                <p class="about__skill">VS Code & Atom</p>
+                                <p class="about__skill">Hostgator</p>
+                                <p class="about__skill">Mail Chimp</p>
+                            </div>
+                        </li>
+                        <!-- end about skills item-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section-about-->
+        <section class="section-work" id="work">
+            <h2 class="heading--sub  u-margin-bottom-large">
+                <span class="u-color-underline">
+                    A Few Projects</span>
+            </h2>
+            <div class="work">
+                <!-- end work-text-->
+
+                <!-- end work-text-container -->
+                <div class="work__projects-container">
+
+                    <div class="work__item--2" data-filter="all" data-filter2="sass">
+                        <div class="work__img-container">
+                            <img src="public/img/memoryGame.png" alt="work-1" class="work__img">
+                        </div>
+                        <div class="work__toggle">
+
+                            <h2 class="heading--work u-block u-m-t-none">Memory Game </h2>
+
+
+                            <i class="fa fa-ellipsis-v work--toggle" data-show="9"></i>
+
+                            <p class="work__description">
+                                A fun memory challenge created Using
+                                <span class="u-bold-primary">VanillaJS</span></p>
+                        </div>
+                        <!-- end TOGGLE-->
+                        <!-- BEGINNING OVER OVERLAY -->
+                        <div class="work__img-overlay u-text-align-left" data-show="9">
+                            <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="9"></i>
+                            <h2 class="heading--work">Features</h2>
+                            <div class="work__overlay-accomplishments u-text-align-left">
+                                <li class="work__list-text">Original design made with
+                                    <span class="u-bold-primary">Photoshop</span>
+                                </li>
+                                <li class="work__list-text"> Use of
+                                    <span class="u-bold-primary">HTML5, CSS3, JavaScript</span>
+                                </li>
+                            </div>
+                            <br>
+                            <div class="work__overlay-links">
+                                <!--github -->
+                                <a href="https://github.com/shireen07/memoryGame.github.io" class="work__link">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                                <!--Direct Link-->
+                                <a href="https://shireen07.github.io/memoryGame.github.io/" class="work__link">
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END OF OVERLAY -->
+
+                    </div>
+                    <!--end work-item-->
+                    <div class="work__item--2" data-filter="all" data-filter2="sass nodejs">
+                        <div class="work__img-container">
+                            <img src="public/img/ASP_Project_Img.png" alt="work-1" class="work__img">
+                        </div>
+                        <div class="work__toggle">
+
+                            <h2 class="heading--work u-block u-m-t-none">CartBug's Shoppe</h2>
+
+                            <i class="fa fa-ellipsis-v work--toggle" data-show="2"></i>
+
+                            <p class="work__description">
+                                An lifestyle E-Commerce website
+                                <span class="u-bold-primary">PHP,JavaScript/JQuery, AJAX, Bootstrap</span>
+                            </p>
+
+                        </div>
+                        <!-- end TOGGLE-->
+                        <!-- BEGINNING OVER OVERLAY -->
+                        <div class="work__img-overlay u-text-align-left" data-show="2">
+                            <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="2"></i>
+                            <h2 class="heading--work">Features</h2>
+                            <div class="work__overlay-accomplishments u-text-align-left">
+                                <li class="work__list-text">Responsive and dynamic website
+                                    <span class="u-bold-primary"></span>
+                                </li>
+                                <li class="work__list-text">
+                                    <span class="u-bold-primary">RESTful Routes, CRUD</span>
+                                </li>
+                                <li class="work__list-text">Card Payment Services
+                                    <span class="u-bold-primary">Stripe.com</span>
+                                </li>
+                                <li class="work__list-text">Backend using
+                                    <span class="u-bold-primary">MySQL</span>
+                                </li>
+                                <li class="work__list-text">
+                                    <span class="u-bold-primary">SASS + Javascript + jQuery</span>
+                                </li>
+                            </div>
+                            <br>
+                            <div class="work__overlay-links">
+                                <a target="_blank" href="https://github.com/shireen07/ASP_Project" class="work__link">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END OF OVERLAY -->
+
+                    </div>
+                    <!--end work-item-->
+                    <div class="work__item--2" data-filter="all" data-filter2="sass nodejs">
+                        <div class="work__img-container">
+                            <img src="public/img/SmartBrainProject.png" alt="work-1" class="work__img">
+                        </div>
+                        <div class="work__toggle">
+
+                            <h2 class="heading--work u-block u-m-t-none">Smart Brain</h2>
+
+
+                            <i class="fa fa-ellipsis-v work--toggle" data-show="8"></i>
+
+                            <p class="work__description">
+                                “find the face” game, bumping users score with each successful detection - 
+                                <span class="u-bold-primary">MERN Stack</span>
+                            </p>
+                        </div>
+                        <!-- end TOGGLE-->
+                        <!-- BEGINNING OVER OVERLAY -->
+                        <div class="work__img-overlay u-text-align-left" data-show="8">
+                            <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="8"></i>
+                            <h2 class="heading--work">Features</h2>
+                            <div class="work__overlay-accomplishments u-text-align-left">
+                                <li class="work__list-text">Use of
+                                    <span class="u-bold-primary">ReactJS,Node.js, Express.js and Postgres</span>
+                                </li>
+                                <li class="work__list-text">Frontend, Server, Database depolyed via -
+                                    <span class="u-bold-primary">Heroku</span>
+                                </li> 
+                                <li class="work__list-text">Use of 
+                                    <span class="u-bold-primary">Clarifai</span>-a machine learning API
+                                </li>
+                            </div>
+                            <br>
+                            <div class="work__overlay-links">
+                                <a target="_blank" href="https://github.com/shireen07/smart-brain" class="work__link">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                                <!--Direct Link-->
+                                <a href="https://smart-brain-ssb.herokuapp.com/" class="work__link">
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END OF OVERLAY -->
+
+                    </div>
+                    <!--end work-item-->
+                    <div class="work__item--2" data-filter="all" data-filter2="sass nodejs">
+                        <div class="work__img-container">
+                            <img src="public/img/robofriends.PNG" alt="work-1" class="work__img">
+                        </div>
+                        <div class="work__toggle">
+
+                            <h2 class="heading--work u-block u-m-t-none">Robo Friends</h2>
+
+
+                            <i class="fa fa-ellipsis-v work--toggle" data-show="11"></i>
+
+                            <p class="work__description">
+                                Sort through your favorite robot friends, just by typing in a name! Created using 
+                                <span class="u-bold-primary">ReactJS</span>
+                            </p>
+
+                        </div>
+                        <!-- end TOGGLE-->
+                        <!-- BEGINNING OVER OVERLAY -->
+                        <div class="work__img-overlay u-text-align-left" data-show="11">
+                            <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="11"></i>
+                            <h2 class="heading--work">Features</h2>
+                            <div class="work__overlay-accomplishments u-text-align-left">
+                                <li class="work__list-text">Designed by Udemy Instructor:
+                                    <span class="u-bold-primary">Andrei Neagoie </span>
+                                </li>
+                                <li class="work__list-text">First app using
+                                    <span class="u-bold-primary">React</span>
+                                </li>
+                                <li class="work__list-text">Use of
+                                    <span class="u-bold-primary">Lodash and live-server </span> npm packages
+                                </li>
+                                <li class="work__list-text">CSS created using
+                                    <span class="u-bold-primary"> Tachyons</span>
+                                </li>
+
+                                <li class="work__list-text">
+                                    Deployed via
+                                    <span class="u-bold-primary">GH-Pages</span>
+                                </li>
+                            </div>
+
+                            <br>
+
+                            <div class="work__overlay-links">
+                                <!--github link-->
+                                <a target="_blank" href="https://github.com/shireen07/robofriends.gihub.io" class="work__link">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END OF OVERLAY -->
+
+                    </div>
+                    <!--end work-item-->
+                    <div class="work__item--2" data-filter="all" data-filter2="sass nodejs">
+                        <div class="work__img-container">
+                            <img src="public/img/voyagerStories.png" alt="work-1" class="work__img">
+                        </div>
+                        <div class="work__toggle">
+
+                            <h2 class="heading--work u-block u-m-t-none">Voyager Stories</h2>
+
+
+                            <i class="fa fa-ellipsis-v work--toggle" data-show="10"></i>
+
+                            <p class="work__description">
+                                Travel website created using only
+                                <span class="u-bold-primary">Client-side Technologies</span>
+                            </p>
+
+                        </div>
+                        <!-- end TOGGLE-->
+                        <!-- BEGINNING OVER OVERLAY -->
+                        <div class="work__img-overlay u-text-align-left" data-show="10">
+                            <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="10"></i>
+                            <h2 class="heading--work">Features</h2>
+                            <div class="work__overlay-accomplishments u-text-align-left">
+                                <li class="work__list-text">
+                                    <span class="u-bold-primary">SASS, Flexbox, and Bootstrap</span>
+                                </li>
+                                <li class="work__list-text">Heavy use of 
+                                    <span class="u-bold-primary"> vanillaJS</span>
+                                </li>
+                                <li class="work__list-text">
+                                    Use of
+                                    <span class="u-bold-primary">jQuery,AJAX</span>
+                                </li>
+                        
+                                <li class="work__list-text">
+                                    <span class="u-bold-primary">Slots</span> game hosted on the website
+                                </li>
+                            </div>
+                            <br>
+                            <div class="work__overlay-links">
+                                <a target="_blank" href="https://github.com/shireen07/CSR_Project" class="work__link">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END OF OVERLAY -->
+
+                    </div>
+                    <!--end work-item-->               
+                </div>
+                <!-- end work-text-->
+
+                <!-- end work--projects container -->
+            </div>
+        </section>
+        <!-- end section-work -->
+
+        <section class="section-contact" id="contact">
+                <h2 class="heading--sub">
+                    <span class="u-color-underline">Contact</span>
+                    <p class="contact__under-header">Have a question or want to work together?
+                        <br><br>Email: <a href="mailto:sherry.phadte@gmail.com">sherry.phadte@gmail.com</a>
+                    </p>
+                </h2>
+            </section>
+        <!-- end section-contact-->  
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="footer__arrow">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <div class="footer__container">
+
+            <a target="blank" href="https://www.linkedin.com/in/shereen-phadte-2b69485b/" class="footer__logo-img footer__logo-img--1">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a target="blank" href="https://github.com/shireen07" class="footer__logo-img footer__logo-img--2">
+                <i class="fa fa-github-square"></i>
+            </a>
+            <a target="blank" href="https://codepen.io/Sherry07/" class="footer__logo-img footer__logo-img--3">
+                <i class="fa fa-codepen"></i>
+            </a>
+            <p class="footer__copyright">Designed by Shereen Phadte, me &copy; 2018</p>
+
+        </div>
+        <!-- end footer container-->
+
+    </footer>
+</body>
+
+
+<!-- include scripts -->
+<script src="public/libs/js/jquery-3.2.1.min.js"></script>
+<script src="public/libs/js/jquery.waypoints.min.js"></script>
+<script src="public/js/jquery-ui.min.js"></script>
+<script src="public/js/jquery.scrollTo.min.js"></script>
+<script src="public/js/jquery.localScroll.min.js"></script>
+<script src="public/js/main.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+
+</html>

@@ -1,0 +1,204 @@
+.about {
+    padding: 1rem;
+    min-height: 775px; //border: $border-test;
+    max-width: $grid-width;
+    margin: 6rem auto;
+    @include respond(tab-port) {
+        width: 95%;
+    }
+    &--2 {
+        //for other ksills
+        min-height: 300px;
+        margin: 3rem auto;
+        opacity: 0;
+        @include respond(phone) {
+            min-height: 500px;
+            margin-top: 55rem;
+            margin-bottom: 8rem;
+        }
+    }
+    &__column {
+        &--1 {
+            //box-shadow: $//box-shadow-secondary;
+            height: 775px;
+            -webkit-animation-duration: .6s ease;
+            @include respond(phone-large) {
+                margin-bottom: 4rem;
+            }
+            @include respond(phone) {
+                margin-bottom: 8rem;
+            }
+        }
+        &--2 {
+            //box-shadow: $//box-shadow-secondary;
+            height: 775px;
+            -webkit-animation-duration: .6s ease;
+            @include respond(phone) {
+                margin-bottom: 8rem;
+            }
+        }
+    }
+    &__profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 95%;
+        margin: 0 auto;
+        padding: 2.5rem;
+        @include respond(tab-port) {
+            width: 85%;
+        }
+        @include respond(phone) {
+            flex-direction: column;
+            justify-content: center;
+            margin: 3rem auto;
+        }
+    }
+    &__img {
+        width: 18rem;
+        height: 18rem;
+        @include respond(tab-port) {}
+    }
+    &__profile-text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 18rem;
+        text-align: left;
+        padding-left: 1rem;
+        @include respond(tab-port) {
+            justify-content: space-around;
+            width: 50%;
+            padding-left: 5rem;
+        }
+        @include respond(phone) {
+            padding-left: 2.5rem;
+            margin-top: 1.2rem;
+            width: 95%;
+        }
+    }
+    &__group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        justify-content: space-between;
+        @include respond(tab-port) {}
+    } //////////////////SKILLS
+    &__skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        min-height: 600px;
+        padding: .5rem 1.5rem;
+        @include respond(phone) {
+            margin-top: 15rem;
+        }
+    }
+    &__skills-item {
+        list-style: none;
+        width: 95%;
+        margin: 2.7rem auto;
+        margin-top: 0;
+        @include respond(phone) {
+            min-height: 270px;
+        }
+        &--2 {
+            padding: 1.5rem; //box-shadow: $//box-shadow-primary;
+            @include respond(phone) {
+                min-height: 270px;
+            }
+        }
+    }
+    &__skills-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: .8rem auto;
+        align-items: center;
+        @include respond(phone) {
+            flex-wrap: wrap;
+        }
+        &--2 {
+            //this is for the categories of skills that only have 3 and not 4
+            justify-content: space-between;
+            @include respond(phone) {
+                flex-wrap: wrap;
+            }
+        } //FOR OTHER SKILLS
+        &--3 {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            min-height: 175px;
+            max-width: $grid-width;
+            @include respond(phone) {
+                min-height: 200px;
+            }
+        }
+        &--item {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 25%;
+            max-width: 33%;
+        }
+    }
+    &__skill {
+        flex: 1 0 15%;
+        min-width: 15%;
+        margin: 0;
+        max-width: 15%;
+        @include respond(phone) {
+            max-width: 45%;
+            flex: 1 0 40%;
+            margin: 2rem 5%;
+        }
+        @include respond(phone-landscape) {
+            max-width: 45%;
+            flex: 1 0 40%;
+            margin: 2rem 5%;
+        }
+    }
+    &__skills-img {
+        height: 12rem; //max-width: 100px;
+        flex: 1 0 20%;
+        max-width: 23%;
+        margin: 1rem 0;
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: 2%;
+        }
+        @include respond(phone) {
+            flex: 1 0 47.5%;
+            max-width: 47.5%;
+            margin: 4.5rem .5%;
+        }
+        &--2 {
+            flex: 1 0 17.5%;
+            max-width: 17.5%;
+            &:not(:last-child) {
+                margin-right: 2%;
+            }
+        }
+    }
+    &__resp-img {
+        width: 100%;
+        max-width: 10rem;
+        height: 11rem;
+        &--2 {
+            width: 100%;
+            max-width: 9rem;
+            height: 10rem;
+        }
+    }
+}
